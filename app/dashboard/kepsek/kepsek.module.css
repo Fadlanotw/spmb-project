@@ -1,0 +1,268 @@
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.title {
+  margin: 0 0 4px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #0b1e33;
+}
+.subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+.titleActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ghostBtn,
+.goldBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.ghostBtn {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+  color: #64748b;
+}
+.ghostBtn:hover {
+  background: #f8fafc;
+}
+.goldBtn {
+  background: #d4af37;
+  border: 0;
+  font-weight: 600;
+  color: #0b1e33;
+}
+.goldBtn:hover {
+  filter: brightness(1.05);
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-content: start;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 296px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.cardTitle {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0b1e33;
+}
+.infoIcon {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+/* Lingkaran + bar */
+.donutRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.circle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 50%;
+  background: #f4f6f9;
+  white-space: nowrap;
+}
+.circle120 {
+  width: 120px;
+  height: 120px;
+}
+.circle110 {
+  width: 110px;
+  height: 110px;
+}
+.circleBig {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1e33;
+}
+.circleBig20 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b1e33;
+}
+.circleSmall {
+  font-size: 10px;
+  color: #64748b;
+}
+.bars {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.barItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.barHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+}
+.barHead span {
+  font-weight: 500;
+  color: #1e293b;
+}
+.barHead strong {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0b1e33;
+  white-space: nowrap;
+}
+.barHeadPlain {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  color: #1e293b;
+}
+.barHeadPlain strong {
+  font-weight: 700;
+}
+.bar6 {
+  height: 6px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.bar8 {
+  height: 8px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Trend */
+.trendUp {
+  font-size: 11px;
+  font-weight: 600;
+  color: #10b981;
+  white-space: nowrap;
+}
+.chart {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 190px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.colVal {
+  font-size: 10px;
+  font-weight: 600;
+  color: #0b1e33;
+}
+.colBar {
+  width: 32px;
+  border-radius: 4px 4px 0 0;
+  background: #0b1e33;
+}
+.colLabel {
+  font-size: 10px;
+  color: #64748b;
+}
+
+/* Nilai ujian */
+.std {
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+}
+.scoreList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.scoreHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.scoreHead span {
+  font-weight: 500;
+  color: #1e293b;
+}
+.scoreHead strong {
+  font-weight: 700;
+  color: #0b1e33;
+}
+.track10 {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 100px;
+  background: #f4f6f9;
+}
+.fill {
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .donutRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .circle {
+    align-self: center;
+  }
+  .colBar {
+    width: 20px;
+  }
+}

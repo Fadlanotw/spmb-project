@@ -1,0 +1,318 @@
+/* Diambil dari frame Figma "login-spmb" (1440 x 900) */
+
+.page {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 864px : 576px pada 1440px */
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* ---------- Sisi kiri: banner ---------- */
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 64px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.bannerImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 30, 51, 0.85);
+}
+
+.bannerContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.crest {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brandName {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.brandSub {
+  margin: 2px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d4af37;
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.description {
+  position: relative;
+  margin: 0;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.bannerFooter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.bannerFooter p {
+  margin: 0;
+}
+
+/* ---------- Sisi kanan: form ---------- */
+
+.formSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+  background: #fff;
+}
+
+.formIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.loginBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #0b1e33;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.loginBrand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.formHeader h1 {
+  margin: 0 0 12px;
+  font-family: var(--font-serif), serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #0b1e33;
+}
+
+.formHeader p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.forgot {
+  font-size: 13px;
+  font-weight: 500;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #94a3b8;
+}
+
+.inputWrap:focus-within {
+  border-color: #0b1e33;
+  outline: 2px solid rgba(212, 175, 55, 0.4);
+  outline-offset: 1px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.iconButton {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.submit {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0b1e33;
+  color: #f3d060;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover:not(:disabled) {
+  background: #12304f;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.register a {
+  font-weight: 600;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+/* ---------- Responsif ---------- */
+
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .formSide {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+}

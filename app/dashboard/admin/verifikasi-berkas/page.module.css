@@ -1,0 +1,54 @@
+.wrap { display: flex; flex-direction: column; gap: 24px; font-family: Inter, system-ui, sans-serif; }
+.serif { font-family: var(--font-instrument-serif, "Instrument Serif"), Georgia, serif; font-weight: 400; color: #0b1e33; margin: 0; }
+.title { font-size: 28px; }
+.subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+
+.card { display: flex; flex-direction: column; gap: 12px; background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; }
+.cardTop { display: flex; align-items: center; justify-content: space-between; }
+.cardLabel { font-size: 11px; font-weight: 600; text-transform: uppercase; color: #64748b; margin: 0; }
+.iconBox { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.cardValue { font-size: 28px; line-height: 1.2; }
+.cardNote { font-size: 11px; color: #94a3b8; margin: 2px 0 0; }
+
+.panel { display: flex; flex-direction: column; gap: 20px; background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.tab { display: flex; align-items: center; gap: 8px; padding: 8px 16px; border: 0; border-radius: 8px; background: #f4f6f9; color: #64748b; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; }
+.tab:hover { background: #e2e8f0; }
+.tabActive, .tabActive:hover { background: #0b1e33; color: #fff; }
+.pill { padding: 1px 6px; border-radius: 100px; background: #e2e8f0; color: #64748b; font-size: 10px; font-weight: 700; }
+.tabActive .pill { background: #d4af37; color: #0b1e33; }
+
+.scroll { overflow-x: auto; }
+.table { min-width: 868px; }
+.row { display: flex; align-items: center; padding: 12px; border-bottom: 1px solid #e2e8f0; }
+.head { display: flex; align-items: flex-start; padding: 10px 12px; background: #f4f6f9; border-radius: 6px; font-size: 11px; font-weight: 700; color: #64748b; }
+.cNo { width: 40px; flex-shrink: 0; }
+.cNama { flex: 1; min-width: 0; }
+.cJurusan { width: 160px; flex-shrink: 0; }
+.cBerkas { width: 150px; flex-shrink: 0; }
+.cTanggal { width: 120px; flex-shrink: 0; }
+.cStatus { width: 110px; flex-shrink: 0; }
+.cAksi { width: 160px; flex-shrink: 0; display: flex; justify-content: flex-end; gap: 6px; }
+.head .cAksi { display: block; text-align: right; }
+.txt { font-size: 13px; color: #64748b; margin: 0; }
+.txtMuted { font-size: 13px; color: #94a3b8; margin: 0; }
+.name { font-size: 13px; font-weight: 600; color: #0b1e33; margin: 0; }
+
+.badge { display: inline-block; padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+.menunggu { background: #fef3c7; color: #f59e0b; }
+.terverifikasi { background: #d1fae5; color: #10b981; }
+.ditolak { background: #fee2e2; color: #ef4444; }
+
+.btn { padding: 6px 10px; border: 0; border-radius: 6px; font: 600 11px Inter, system-ui, sans-serif; cursor: pointer; }
+.btn:hover { filter: brightness(0.95); }
+.btnOk { background: #d1fae5; color: #10b981; }
+.btnNo { background: #fee2e2; color: #ef4444; }
+.btnDetail { background: #f4f6f9; color: #64748b; border: 1px solid #e2e8f0; padding: 6px 12px; }
+
+.empty { text-align: center; padding: 24px; font-size: 13px; color: #94a3b8; border-bottom: 1px solid #e2e8f0; margin: 0; }
+.footer { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.link { background: none; border: 0; padding: 0; font: 600 13px Inter, system-ui, sans-serif; color: #d4af37; cursor: pointer; }

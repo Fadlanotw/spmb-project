@@ -1,0 +1,315 @@
+/* Diambil dari frame Figma "daftar-akun-spmb" (1440 x 900) */
+
+.page {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* ---------- Sisi kiri: banner ---------- */
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 64px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.bannerImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 30, 51, 0.88);
+}
+
+.brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.crest {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brandName {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.brandSub {
+  margin: 2px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d4af37;
+}
+
+.welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.badge {
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: #1f4260;
+  color: #f3d060;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.bannerFooter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bannerFooterLine {
+  height: 1px;
+  background: #d4af37;
+  opacity: 0.4;
+}
+
+.bannerFooterText {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.bannerFooterText p {
+  margin: 0;
+}
+
+/* ---------- Sisi kanan: form ---------- */
+
+.formSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 64px;
+  background: #fff;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 480px;
+  max-width: 100%;
+}
+
+.formHeader h1 {
+  margin: 0 0 8px;
+  font-family: var(--font-serif), serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #0b1e33;
+}
+
+.formHeader p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.required {
+  margin-left: 4px;
+  color: #ef4444;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #94a3b8;
+}
+
+.inputWrap:focus-within {
+  border-color: #0b1e33;
+  outline: 2px solid rgba(212, 175, 55, 0.4);
+  outline-offset: 1px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select:invalid {
+  color: #94a3b8;
+}
+
+.chevron {
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.message {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.success {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submit {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0b1e33;
+  color: #f3d060;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover:not(:disabled) {
+  background: #12304f;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.login a {
+  font-weight: 600;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* ---------- Responsif ---------- */
+
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .formSide {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .row {
+    flex-direction: column;
+  }
+}

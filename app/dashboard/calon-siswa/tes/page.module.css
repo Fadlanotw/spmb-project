@@ -1,0 +1,77 @@
+.page { min-height: 100vh; padding: 32px 20px 64px; background: #f4f6f9; color: #0b1e33; font-family: Inter, system-ui, sans-serif; }
+.top, .exam, .instructions { width: min(1080px, 100%); margin: 0 auto; }
+.back { color: #64748b; font-size: 13px; text-decoration: none; }
+.back:hover { color: #0b1e33; }
+.eyebrow { margin: 26px 0 6px; color: #b08d24; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.top h1 { margin: 0; font: 400 32px var(--font-instrument-serif, Georgia, serif); }
+.intro { margin: 6px 0 22px; color: #64748b; font-size: 13px; }
+.notice, .result { width: min(720px, 100%); box-sizing: border-box; margin: 0 auto; padding: 28px; border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; text-align: center; }
+.notice h2, .result h2 { margin: 0 0 8px; font: 400 22px var(--font-instrument-serif, Georgia, serif); }
+.notice p { margin: 0; color: #64748b; font-size: 13px; }
+.instructions { box-sizing: border-box; padding: 28px; border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; }
+.instructionTitle { display: flex; align-items: center; gap: 10px; color: #0b1e33; }
+.instructionTitle h2 { margin: 0; font: 400 22px var(--font-instrument-serif, Georgia, serif); }
+.instructions ul { display: flex; flex-direction: column; gap: 12px; margin: 20px 0 24px; padding-left: 20px; color: #475569; font-size: 13px; line-height: 1.6; }
+.startButton, .submitButton, .nextButton, .confirmButton { border: 0; border-radius: 8px; background: #0b1e33; color: #fff; font: 600 13px Inter, system-ui, sans-serif; cursor: pointer; }
+.startButton { min-height: 42px; padding: 0 20px; }
+.startButton:hover, .submitButton:hover, .nextButton:hover:not(:disabled), .confirmButton:hover:not(:disabled) { background: #1f4260; }
+.exam { padding: 20px; border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; }
+.examHeader { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.examLabel { color: #047857; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.examHeader p { margin: 5px 0 0; color: #64748b; font-size: 12px; }
+.timer { display: flex; align-items: center; gap: 9px; padding: 10px 14px; border: 1px solid #bbf7d0; border-radius: 9px; background: #f0fdf4; color: #047857; font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.timerLow { border-color: #fecaca; background: #fef2f2; color: #b91c1c; }
+.progressTrack { height: 5px; margin: 18px 0 20px; overflow: hidden; border-radius: 10px; background: #e2e8f0; }
+.progressTrack span { display: block; height: 100%; border-radius: inherit; background: #d4af37; transition: width .2s ease; }
+.examBody { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: start; gap: 18px; }
+.questionPanel { min-height: 420px; display: flex; flex-direction: column; padding: 22px; border: 1px solid #e2e8f0; border-radius: 12px; }
+.questionMeta { display: flex; justify-content: space-between; gap: 12px; color: #b08d24; font-size: 11px; font-weight: 700; }
+.questionMeta span:last-child { color: #64748b; font-weight: 500; }
+.questionPanel h2 { margin: 22px 0; color: #0b1e33; font-size: 17px; line-height: 1.6; }
+.options { display: flex; flex-direction: column; gap: 10px; }
+.option { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #e2e8f0; border-radius: 9px; color: #475569; font-size: 13px; line-height: 1.5; cursor: pointer; transition: border-color .15s ease, background .15s ease; }
+.option input { position: absolute; opacity: 0; pointer-events: none; }
+.optionLetter { display: grid; width: 28px; height: 28px; flex: 0 0 28px; place-items: center; border: 1px solid #cbd5e1; border-radius: 50%; color: #64748b; font-size: 11px; font-weight: 700; }
+.selected { border-color: #d4af37; background: #fffbeb; color: #0b1e33; }
+.selected .optionLetter { border-color: #d4af37; background: #d4af37; color: #0b1e33; }
+.option:focus-within { outline: 2px solid #d4af37; outline-offset: 2px; }
+.questionActions { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: auto; padding-top: 24px; }
+.markButton, .pageButton, .cancelButton { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 0 11px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; color: #64748b; font: 600 11px Inter, system-ui, sans-serif; cursor: pointer; }
+.markButton:hover, .pageButton:hover:not(:disabled), .cancelButton:hover { background: #f8fafc; }
+.marked { border-color: #fcd34d; color: #92400e; background: #fffbeb; }
+.paging { display: flex; gap: 8px; }
+.pageButton:disabled { opacity: .45; cursor: not-allowed; }
+.nextButton { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-height: 38px; padding: 0 12px; font-size: 11px; }
+.navigator { padding: 18px; border: 1px solid #e2e8f0; border-radius: 12px; }
+.navigator h3 { margin: 0; font-size: 14px; }
+.navigator > p { margin: 5px 0 16px; color: #64748b; font-size: 11px; }
+.numberGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.numberButton { width: 100%; aspect-ratio: 1; border: 1px solid #e2e8f0; border-radius: 7px; background: #fff; color: #64748b; font: 600 12px Inter, system-ui, sans-serif; cursor: pointer; }
+.numberButton:hover { border-color: #94a3b8; }
+.numberAnswered { border-color: #86efac; background: #dcfce7; color: #047857; }
+.numberMarked { border-color: #fcd34d; background: #fef3c7; color: #92400e; }
+.numberCurrent { outline: 2px solid #0b1e33; outline-offset: 2px; }
+.legend { display: flex; flex-direction: column; gap: 9px; margin: 18px 0; color: #64748b; font-size: 10px; }
+.legend span { display: flex; align-items: center; gap: 8px; }
+.legend i { width: 11px; height: 11px; border: 1px solid #e2e8f0; border-radius: 3px; background: #fff; }
+.legendAnswered { border-color: #86efac !important; background: #dcfce7 !important; }
+.legendMarked { border-color: #fcd34d !important; background: #fef3c7 !important; }
+.submitButton { width: 100%; min-height: 40px; font-size: 12px; }
+.submitButton:disabled, .confirmButton:disabled { opacity: .6; cursor: wait; }
+.error { margin: 14px 0 0; padding: 12px 14px; border-radius: 8px; color: #b91c1c; background: #fee2e2; font-size: 13px; }
+.result { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.resultIcon { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 50%; background: #dcfce7; color: #047857; }
+.result p { margin: 4px 0 0; color: #64748b; font-size: 13px; }
+.result strong { color: #0b1e33; font-size: 42px; }
+.result > span:not(.resultIcon) { color: #64748b; font-size: 13px; }
+.backResult { margin-top: 10px; color: #0b1e33; font-size: 13px; font-weight: 600; text-decoration: none; }
+.modalBackdrop { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 16px; background: rgb(15 23 42 / 55%); }
+.confirmDialog { width: min(440px, 100%); box-sizing: border-box; padding: 24px; border-radius: 14px; background: #fff; box-shadow: 0 20px 60px rgb(15 23 42 / 25%); }
+.warningIcon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: #fef3c7; color: #92400e; }
+.confirmDialog h2 { margin: 16px 0 8px; color: #0b1e33; font-size: 18px; }
+.confirmDialog p { margin: 0; color: #64748b; font-size: 13px; line-height: 1.6; }
+.dialogActions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 22px; }
+.cancelButton, .confirmButton { min-height: 38px; padding: 0 13px; font-size: 11px; }
+.confirmButton { background: #0b1e33; }
+@media (max-width: 760px) { .page { padding: 24px 14px 48px; } .examBody { grid-template-columns: 1fr; } .questionPanel { min-height: 370px; } .navigator { order: -1; } .numberGrid { grid-template-columns: repeat(10, 1fr); } .legend { flex-direction: row; flex-wrap: wrap; } }
+@media (max-width: 520px) { .exam { padding: 14px; } .questionPanel { padding: 16px; } .examHeader { align-items: flex-start; } .timer { padding: 8px 10px; font-size: 14px; } .numberGrid { grid-template-columns: repeat(5, 1fr); } .questionActions { align-items: stretch; flex-direction: column; } .markButton { align-self: flex-start; } .paging { justify-content: space-between; } .dialogActions { flex-direction: column-reverse; } .dialogActions button { width: 100%; } }

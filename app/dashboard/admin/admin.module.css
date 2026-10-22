@@ -1,0 +1,340 @@
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.title {
+  margin: 0 0 4px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #0b1e33;
+}
+.subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+.ghostBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+}
+.ghostBtn:hover {
+  background: #f8fafc;
+  color: #0b1e33;
+}
+
+/* KPI */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+.kpiHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.kpiLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  white-space: nowrap;
+}
+.kpiIcon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.navy {
+  background: rgba(31, 66, 96, 0.08);
+  color: #1f4260;
+}
+.green {
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+}
+.amber {
+  background: rgba(245, 158, 11, 0.08);
+  color: #f59e0b;
+}
+.red {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+}
+.kpiBody {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.kpiValue {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 36px;
+  line-height: normal;
+  color: #0b1e33;
+}
+.kpiNote {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Split */
+.split {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+.split > .card:first-child {
+  flex: 1;
+  min-width: 0;
+}
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardTitle {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0b1e33;
+}
+.link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d4af37;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Tabel */
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.tr {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+}
+.thead {
+  padding: 10px 8px;
+  background: #f4f6f9;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+}
+.trow {
+  border-bottom: 1px solid #e2e8f0;
+}
+.cNo {
+  width: 40px;
+  flex-shrink: 0;
+}
+.cName {
+  flex: 1;
+  min-width: 0;
+}
+.cMajor {
+  width: 150px;
+  flex-shrink: 0;
+}
+.cDate {
+  width: 120px;
+  flex-shrink: 0;
+}
+.cStatus {
+  width: 120px;
+  flex-shrink: 0;
+}
+.tNo {
+  font-size: 13px;
+  color: #1e293b;
+}
+.tName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0b1e33;
+}
+.tMajor {
+  font-size: 13px;
+  color: #64748b;
+}
+.tDate {
+  font-size: 13px;
+  color: #94a3b8;
+}
+.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.stGreen {
+  background: #d1fae5;
+  color: #10b981;
+}
+.stAmber {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+.stRed {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+/* Persentase jurusan */
+.majors {
+  width: 340px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+.majorList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.major {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.majorHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.majorHead span {
+  font-weight: 500;
+  color: #1e293b;
+}
+.majorHead strong {
+  font-weight: 700;
+  color: #0b1e33;
+}
+.track {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 100px;
+  background: #f4f6f9;
+}
+.fill {
+  height: 100%;
+}
+.hr {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: #e2e8f0;
+}
+.footnote {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #64748b;
+}
+
+@media (max-width: 1200px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .split {
+    flex-direction: column;
+  }
+  .majors {
+    width: auto;
+  }
+}
+@media (max-width: 700px) {
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+  .table {
+    overflow-x: auto;
+  }
+  .tr {
+    min-width: 560px;
+  }
+}
+
+
+/* ===== Perbaikan tabel Pendaftar Terbaru ===== */
+.table {
+  width: 100%;
+  overflow-x: auto; /* kalau kartu sempit, tabel bisa digeser, bukan menumpuk */
+}
+
+.table .tr {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(9rem, 1.4fr) minmax(8rem, 1.2fr) 6.5rem 8rem;
+  column-gap: 0.75rem;
+  align-items: center;
+  min-width: 34rem;
+}
+
+/* Setiap sel mengikuti kolomnya sendiri, tidak lagi menumpuk di satu posisi */
+.table .tr > * {
+  position: static;
+  grid-column: auto;
+  grid-row: auto;
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Kolom Tanggal: satu baris */
+.table .tr > *:nth-child(4) {
+  white-space: nowrap;
+}
+
+/* Kolom Status: label tidak melebar dan tidak keluar dari kartu */
+.table .tr > *:nth-child(5) {
+  justify-self: start;
+  white-space: nowrap;
+}

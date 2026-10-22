@@ -1,0 +1,4 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #fafafa; color: #222; }
+input, button { padding: 10px; font-size: 16px; }
+button { cursor: pointer; }
+a { color: #2563eb; }

@@ -1,0 +1,86 @@
+.page { display: flex; flex-direction: column; gap: 18px; }
+.pageHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.eyebrow { margin: 0 0 6px; color: #b08d24; font-size: 9px; font-weight: 700; letter-spacing: .09em; }
+.pageHeading h1 { margin: 0; color: #0b1e33; font: 400 26px Georgia, serif; }
+.pageHeading p { margin: 6px 0 0; color: #64748b; font-size: 11px; }
+.statusBadge { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid #a7f3d0; border-radius: 100px; background: #ecfdf5; color: #047857; font-size: 9px; font-weight: 700; white-space: nowrap; }
+.statusBadge span { width: 6px; height: 6px; border-radius: 50%; background: #10b981; }
+.summaryGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.summaryCard { display: flex; align-items: center; gap: 12px; padding: 15px; border: 1px solid #e2e8f0; border-radius: 9px; background: #fff; }
+.summaryIcon { display: grid; width: 36px; height: 36px; flex: 0 0 36px; place-items: center; border-radius: 8px; background: #eff6ff; color: #1d4ed8; }
+.summaryCard small, .summaryCard strong { display: block; }
+.summaryCard small { color: #94a3b8; font-size: 8px; font-weight: 700; letter-spacing: .07em; }
+.summaryCard strong { margin-top: 4px; color: #0b1e33; font-size: 12px; }
+.panel, .noticePanel { padding: 18px; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; }
+.panelHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.panelHeading h2, .noticePanel h2 { margin: 0; color: #0b1e33; font: 400 19px Georgia, serif; }
+.panelHeading p { margin: 5px 0 0; color: #64748b; font-size: 10px; }
+.panelHeading > span { padding: 5px 8px; border-radius: 100px; background: #f1f5f9; color: #64748b; font-size: 9px; white-space: nowrap; }
+.progressList { margin: 0; padding: 0; list-style: none; }
+.progressItem { display: flex; align-items: center; gap: 12px; min-height: 57px; border-top: 1px solid #f1f5f9; }
+.progressIcon { display: grid; width: 25px; flex: 0 0 25px; place-items: center; color: #cbd5e1; }
+.progressComplete { color: #10b981; }
+.progressCopy { flex: 1; min-width: 0; }
+.progressCopy strong { color: #0b1e33; font-size: 11px; }
+.progressCopy p { margin: 3px 0 0; color: #64748b; font-size: 9px; }
+.progressLink { display: inline-flex; align-items: center; gap: 4px; color: #1d4ed8; font-size: 9px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.progressLink:hover { text-decoration: underline; }
+.bottomGrid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 14px; }
+.quickLinks { display: flex; flex-direction: column; }
+.quickLinks a { display: flex; align-items: center; gap: 10px; min-height: 48px; border-top: 1px solid #f1f5f9; color: #64748b; text-decoration: none; }
+.quickLinks a > span { display: flex; flex: 1; flex-direction: column; gap: 3px; }
+.quickLinks a strong { color: #0b1e33; font-size: 10px; }
+.quickLinks a small { font-size: 9px; }
+.quickLinks a:hover strong { color: #1d4ed8; }
+.noticePanel { align-self: stretch; background: #0b1e33; color: #fff; }
+.noticeIcon { display: grid; width: 34px; height: 34px; margin-bottom: 15px; place-items: center; border-radius: 8px; background: rgb(212 175 55 / 18%); color: #d4af37; }
+.noticePanel h2 { color: #fff; }
+.noticePanel p { color: #cbd5e1; font-size: 10px; line-height: 1.7; }
+.noticePanel a { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; color: #f5d66d; font-size: 9px; text-decoration: none; }
+.error { margin: 0; padding: 10px 12px; border: 1px solid #fecaca; border-radius: 7px; background: #fef2f2; color: #b91c1c; font-size: 11px; }
+.formPanel { padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; }
+.formPanel h2 { margin: 0 0 5px; color: #0b1e33; font: 400 20px Georgia, serif; }
+.formHint { margin: 0 0 18px; color: #64748b; font-size: 10px; }
+.formGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { color: #334155; font-size: 10px; font-weight: 600; }
+.field input, .field select, .field textarea { width: 100%; box-sizing: border-box; min-height: 38px; padding: 9px 10px; border: 1px solid #dbe2ea; border-radius: 6px; outline: none; background: #fff; color: #0b1e33; font: 11px Inter, system-ui, sans-serif; }
+.field textarea { min-height: 75px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: #d4af37; box-shadow: 0 0 0 2px rgb(212 175 55 / 15%); }
+.field input:disabled { background: #f8fafc; color: #64748b; }
+.wide { grid-column: 1 / -1; }
+.formActions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+.primaryButton, .secondaryButton { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 0 14px; border: 0; border-radius: 6px; font: 600 10px Inter, system-ui, sans-serif; cursor: pointer; }
+.primaryButton { background: #0b1e33; color: #fff; }
+.primaryButton:hover { background: #173a5e; }
+.secondaryButton { border: 1px solid #dbe2ea; background: #fff; color: #475569; }
+.primaryButton:disabled { cursor: not-allowed; opacity: .6; }
+.message { padding: 14px; border-radius: 7px; font-size: 10px; }
+.success { border: 1px solid #a7f3d0; background: #ecfdf5; color: #047857; }
+.documentsGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.documentCard { display: flex; min-height: 135px; flex-direction: column; gap: 9px; padding: 13px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; }
+.documentHead { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; }
+.documentHead strong { color: #0b1e33; font-size: 10px; }
+.documentStatus { color: #d97706; font-size: 8px; font-weight: 700; }
+.documentUploaded { color: #059669; }
+.fileInput { display: none; }
+.filePicker { display: flex; min-height: 55px; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border: 1px dashed #cbd5e1; border-radius: 6px; color: #64748b; font-size: 9px; text-align: center; cursor: pointer; }
+.filePicker:hover { border-color: #d4af37; background: #fffbeb; }
+.fileName { overflow: hidden; color: #475569; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.documentActions { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: auto; }
+.documentActions a, .documentActions button { border: 0; background: transparent; color: #1d4ed8; font: 600 9px Inter, system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+.documentActions button { color: #dc2626; }
+.resultList { display: flex; flex-direction: column; gap: 10px; }
+.resultCard { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; }
+.resultCard strong { color: #0b1e33; font-size: 13px; }
+.resultCard small { display: block; margin-top: 4px; color: #64748b; font-size: 9px; }
+.resultScore { color: #047857; font-size: 22px; font-weight: 700; }
+.announcement { padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; }
+.announcement + .announcement { margin-top: 10px; }
+.announcement small { color: #b08d24; font-size: 9px; font-weight: 700; text-transform: uppercase; }
+.announcement h3 { margin: 7px 0; color: #0b1e33; font: 400 17px Georgia, serif; }
+.announcement p { margin: 0; color: #64748b; font-size: 10px; line-height: 1.7; }
+.announcement .announcementDate { display: flex; align-items: center; gap: 5px; margin-top: 10px; color: #94a3b8; font-size: 9px; }
+@media (max-width: 900px) { .summaryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .bottomGrid { grid-template-columns: 1fr; } .documentsGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .summaryGrid { grid-template-columns: 1fr; } .pageHeading { flex-direction: column; } .formGrid { grid-template-columns: 1fr; } .wide { grid-column: auto; } .documentsGrid { grid-template-columns: 1fr; } .progressItem { gap: 8px; } .progressLink { font-size: 8px; } }
